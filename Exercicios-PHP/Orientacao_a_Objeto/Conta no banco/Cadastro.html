@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Abrir Conta</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    div {
+      margin: auto;
+      width: 500px;
+    }
+
+    table {
+      margin: auto;
+      width: 300px;
+      border-spacing: 2px;
+      font-size: 15pt;
+    }
+
+    table td.centro {
+      text-align: center;
+      background-color: #92a8d1;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <fieldset>
+
+      <table>
+
+        <form action="instancia.php" method="GET">
+          <h1>Cadastro</h1>
+          <tr>
+            <td colspan="2">Nome:<input type="text" name="nome" size="33" placeholder="Nome Completo"></td>
+          </tr>
+          <tr>
+            <td class="centro" colspan="2">Tipo da conta:</td>
+          </tr>
+          <tr>
+            <td>Corrente<input type="radio" name="corrente"></td>
+            <td>Poupança<input type="radio" name="corrente"></td>
+          </tr>
+          <tr>
+            <td class="centro" colspan="2"><input type="submit" value="Enviar"> </td>
+          </tr>
+        </form>
+
+      </table>
+
+    </fieldset>
+  </div>
+</body>
+
+</html>
