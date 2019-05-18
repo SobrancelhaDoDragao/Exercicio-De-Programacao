@@ -4,4 +4,4 @@
 carteira = float(input("Quanto vc tem na carteira? "))
 valor_dolar = float(3.27)
 poder_de_compra = carteira / valor_dolar
-print("Você pode comprar com {} reais, {} Dólares.".format(carteira,poder_de_compra))
+print("Você pode comprar com {:.2f} reais, {:.2f} Dólares.".format(carteira,poder_de_compra))

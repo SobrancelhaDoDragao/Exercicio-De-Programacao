@@ -9,5 +9,5 @@ largura = float(input("Largura? "))
 
 area_parede = altura * largura
 tinta_necessaria = area_parede / 2
-print("Será necessário {} litros de tinta, para pintar a parede".format(tinta_necessaria))
+print("Será necessário {:.2f} litros de tinta, para pintar a parede".format(tinta_necessaria))
 

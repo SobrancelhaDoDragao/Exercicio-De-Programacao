@@ -3,4 +3,4 @@
 preco_bruto = float(input("Digite o preço do produto? "))
 desconto = 0.05
 preco_a_pagar = preco_bruto - desconto * preco_bruto
-print("O preço do produto com desconto é {}".format(preco_a_pagar))
+print("O preço do produto com desconto é {:.2f}".format(preco_a_pagar))
