@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 # Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto
 preco_bruto = float(input("Digite o preço do produto? "))
 desconto = 0.05

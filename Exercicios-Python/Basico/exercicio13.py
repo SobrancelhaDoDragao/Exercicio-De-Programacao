@@ -4,4 +4,3 @@ salario = float(input("Digite seu salário: "))
 aumento = 0.15
 salario_com_aumento = salario + aumento * salario
 print("O salário com aumento é {}".format(salario_com_aumento))
-
