@@ -8,4 +8,5 @@ subtracao = numero1 - numero2
 multiplicacao = numero1 * numero2
 divicao = numero1/numero2
 # O :2.F serve para formatar o valor
-print("A soma é:{}, a subtração é {}, a multiplicacão é {}, divisão é {:.2f}".format(soma,subtracao,multiplicacao,divicao))
+print("A soma é:{}, a subtração é {}, a multiplicacão é {}, divisão é {:.2f}".format(
+    soma, subtracao, multiplicacao, divicao))
