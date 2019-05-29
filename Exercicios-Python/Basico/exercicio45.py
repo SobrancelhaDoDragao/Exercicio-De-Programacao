@@ -21,11 +21,7 @@ partida = [computador,jogador]
 # Vendo que ganhou
 
 # Primeiro todo os empates possíveis
-if partida[0] == 'PEDRA' and partida[1] == 'PEDRA':
-    print("Empate! Computador jogou {} e jogador jogou {}.".format(computador,jogador))
-if partida[0] == 'TESOURA' and partida[1] == 'TESOURA':
-    print("Empate! Computador jogou {} e jogador jogou {}.".format(computador,jogador))
-if partida[0] == 'PAPEL' and partida[1] == 'PAPEL':
+if partida[0] == partida[1]:
     print("Empate! Computador jogou {} e jogador jogou {}.".format(computador,jogador))
 # Agora todos as vitoria do computador
 if partida[0] == 'PAPEL' and partida[1] == 'PEDRA':
