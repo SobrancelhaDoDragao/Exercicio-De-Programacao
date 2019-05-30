@@ -17,7 +17,9 @@ print(" ")
 
 # Controlando a orden da jogadas
 partida = [computador,jogador]
-
+print("Jogador VS Computador")
+print("  {} || {} ".format(jogador,computador))
+print(" ")
 # Vendo que ganhou
 
 # Primeiro todo os empates possíveis
