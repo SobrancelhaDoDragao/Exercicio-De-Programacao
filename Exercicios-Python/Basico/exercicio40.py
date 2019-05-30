@@ -16,8 +16,8 @@ n2 = float(input("Digite sua segunda nota: "))
 media = (n1 + n2)/2
 
 if media >= 7.0:
-    print("APROVADO")
+    print("APROVADO com a média: {}".format(media))
 elif media >= 5.0 and media <= 6.9:
-    print("RECUPERACAO")
+    print("RECUPERACAO média: {}".format(media))
 else:
-    print("REPROVADO")
+    print("REPROVADO média: {}".format(media))
