@@ -3,10 +3,10 @@
 import pygame
 
 pygame.init()
-pygame.mixer.music.load('mu.mp3')
+pygame.mixer.music.load('musica.mp3')
 pygame.mixer.music.play()
 pygame.event.wait()
 
-#Por causa de algum motivo desconhecido não funciona
+# Por causa de algum motivo desconhecido não funciona
 
 
