@@ -1,5 +1,5 @@
 """
-Aqui todas as classes serão importada e instanciadas
+Aqui todas as classes serão importadas e instânciadas
 """
 from cliente import Cliente
 from conta import Conta
