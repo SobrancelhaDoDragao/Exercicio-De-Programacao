@@ -8,6 +8,8 @@ B)A média de idade do grupo
 C)Um lista com todas as mulheres
 D)Uma lista com todas as pessoas com idade acima da média.
 '''
+# Iniciando todas as variáveis
+
 bancoDedados = []
 pessoa = {}
 totalCadastrados = 0
@@ -21,11 +23,13 @@ while True:
 
     while pessoa['Sexo'] != 'M' and pessoa['Sexo'] != 'F':
         pessoa['Sexo'] = input("Sexo inválido digite novamente! (M/F) ").upper()
+
     pessoa['Idade'] = int(input("Qual é a idade? "))
     bancoDedados.append(pessoa.copy())
 
     if pessoa['Sexo'] == 'F':
         mulheres.append(pessoa.copy())
+
     totalCadastrados += 1
     soma += pessoa['Idade']
     pessoa.clear()

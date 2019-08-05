@@ -6,8 +6,8 @@ from historico import Historico
 from cliente import Cliente
 
 class Conta():
- 
     # Métodos
+    
     def __init__(self,cliente,saldo,limite):
         # Aqui eu passei uma objeto 'cliente' como refêrencia
         # Através dele posso acessar todos os métodos do objeto

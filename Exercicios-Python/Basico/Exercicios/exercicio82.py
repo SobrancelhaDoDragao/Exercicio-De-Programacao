@@ -28,4 +28,3 @@ print(f"Segunda lista com todos os valores pare {par}")
 print(f"Terceira lista com todos os valores impares {impar}")
 
 
-
