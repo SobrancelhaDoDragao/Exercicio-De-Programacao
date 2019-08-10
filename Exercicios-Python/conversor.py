@@ -5,14 +5,13 @@ def Metro(valor,unidade):
     Função que converte valores a partir do metro
     """
     contexto = {'km': 1000,'hm':100,'dam':10,'dm':10,'cm':100,'mm':1000}
-    divisao = ('km','hm','dam')
 
-    if unidade in divisao:
+    if unidade == 'km' or unidade == 'hm' or unidade == 'dam':
         return valor/contexto[unidade]
     else:
         return valor*contexto[unidade]
 
-
+        
 def Kilometro(valor,unidade):
     """
     Função que converte valores a partir do Kilometro
@@ -21,38 +20,38 @@ def Kilometro(valor,unidade):
 
     return valor*contexto[unidade]
 
+
 def Hectometro(valor,unidade):
     """
     Função que converte valores a partir do Hectometro
     """
     contexto = {'km':10,'dm':10,'m':100,'dm':1000,'cm':10000,'mm':100000}
-    divisao = {'km'}
 
-    if unidade in divisao:
+    if unidade == 'km':
         return valor/contexto[unidade]
     else:
         return valor*contexto[unidade]
+
 
 def Decametro(valor,unidade):
     """
     Função que converte valores a partir do Decametro
     """
     contexto = {'km':100,'hm':10,'m':10,'dm':100,'cm':1000,'mm':10000}
-    divisao = ('km','hm')
 
-    if unidade in divisao:
+    if unidade == 'km' or unidade == 'hm':
         return valor/contexto[unidade]
     else:
         return valor*contexto[unidade]
+
 
 def Decimetro(valor,unidade):
     """
     Função que converte valores a partir do Decimetro
     """
     contexto = {'km':10000,'hm':1000,'dam':100,'m':10,'cm':10,'mm':100}
-    multiplicacao = ('cm','mm')
 
-    if unidade in multiplicacao:
+    if unidade == 'cm' or unidade == 'mm':
         return valor*contexto[unidade]
     else:
         return valor/contexto[unidade]
@@ -63,12 +62,12 @@ def Centimetro(valor,unidade):
     Função que converte valores a partir do Centimetro
     """
     contexto = {'km':100000,'hm':10000,'dam':1000,'m':100,'dm':10,'mm':10}
-    multiplicacao = ('mm')
     
-    if unidade in multiplicacao:
+    if unidade == 'mm':
         return valor*contexto[unidade]
     else:
         return valor/contexto[unidade]
+
 
 def Milimetro(valor,unidade):
     """
@@ -107,29 +106,29 @@ print("""
 print("""
  Digite na tela para qual unidade será convertida:
          
-       | km | hm | dm | m | dm | cm | mm |
+       | km | hm | dam | m | dm | cm | mm |
          1     2    3   4    5    6    7
 """)
 escolha = str(input()).lower()
 os.system('clear')
 
 if unidade_main == 'km':
-    print(f"O resultado da conversão: {Kilometro(valor_main,escolha)}")
+    print(f"O resultado da conversão: {Kilometro(valor_main,escolha)} {escolha}")
 
 if unidade_main == 'hm':
-    print(Hectometro(valor_main,escolha))
+    print(f"O resultado da conversão: {Hectometro(valor_main,escolha)} {escolha}")
 
 if unidade_main == 'dm':
-    print(Decametro(valor_main,escolha))
+    print(f"O resultado da conversão: {Decametro(valor_main,escolha)} {escolha}")
 
 if unidade_main == 'm':
-    print(Metro(valor_main,escolha))
+    print(f"O resultado da conversão: {Metro(valor_main,escolha)} {escolha}")
 
 if unidade_main == 'dm':
-    print(Decimetro(valor_main,escolha))
+    print(f"O resultado da conversão é: {Decimetro(valor_main,escolha)} {escolha}")
 
 if unidade_main == 'cm':
-    print(Centimetro(valor_main,escolha))
+    print(f"O resultado da conversão é: {Centimetro(valor_main,escolha)} {escolha}")
 
 if unidade_main == 'mm':
-    print(Milimetro(valor_main,escolha))
+    print(f"O resultado da conversão é: {Milimetro(valor_main,escolha)} {escolha}")
